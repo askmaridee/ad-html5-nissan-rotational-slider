@@ -1,0 +1,655 @@
+<div id="hc_richmedia">
+    <meta name="viewport" content="width=device-width">
+	<script type="text/javascript">
+		if(!window.jQuery || !window.$) {
+			document.write('\x3Cscript src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript">\x3C/script>');
+		}
+	</script>
+	
+	<script src="scripts/33030.js" type="text/javascript"></script>
+	<script type="text/javascript" src="mraid.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/27565.css" media="screen" />
+	
+	<style type="text/css">
+	body {margin: 0px;}
+	a#hc_expand { 
+		display: block;
+		width: 320px;
+		height: 50px;
+		}
+
+	#hc_richmedia {
+		font-family: Helvetica, Arial, Sans-serif;
+		position:relative;
+		width:320px;
+		margin:0 auto;
+      /*border:solid 1px red;*/
+	}
+	#hc_richmedia .hc_content {
+		background: url('images/37202.jpg') no-repeat;
+		position:relative;
+		width:320px;
+		height:416px;
+		text-align:center;
+		z-index:1;
+	}
+	#hc_richmedia .hc_closebtn {
+		position:absolute;
+		top:0px;
+		right:0px;
+		z-index:2;
+		cursor:pointer;
+	}
+	#hc_richmedia .hc_closebtn img {
+		position:relative;
+		z-index:20;
+	}
+	#hc_richmedia .hc_content h3 {
+		margin-top:0;
+	}
+	#hc_richmedia .hc_blockimg {
+		display:block;
+	}
+	a img {border: none;}
+
+	/* custom styles */
+	#start_btn {
+		position: relative;
+		top: 305px;
+	}
+	.hc_click {
+		display: none;
+		position: absolute;
+		top: 357px;
+		left: 85px;
+	}
+	
+	/* rotating images */
+	#hc_content .car-viewport {
+		width: 320px;
+		height: 250px;
+		background-size: cover;
+		position: absolute;
+		top: 70px;
+		left: 0;
+	}
+	#hc_content .rotate_txt {
+		position: relative;
+		top: 150px;
+	}
+	#hc_content .car-blue {
+	  background-image: url('images/37270.png');
+	  background-position: 0px -255px;
+	}
+	#hc_content .car-jade {
+	  background-image: url('images/37269.png');
+	  background-position: 0px -255px;
+	}
+	#hc_content .car-black {  
+	  background-image: url('images/37267.png');
+	  background-position: 0px -255px;
+	}
+	#hc_content .car-red {
+	  background-image: url('images/37271.png');
+	  background-position: 0px -255px;
+	}
+	#hc_content .car-gun {
+	  background-image: url('images/37268.png');
+	  background-position: 0px -255px;
+	}
+	#hc_content .car-silver {
+	  background-image: url('images/37272.png');
+	  background-position: 0px -255px;
+	}
+	#hc_content .car-white {
+	  background-image: url('images/37274.png');
+	  background-position: 0px -255px;
+	}
+	#hc_content .car-sun {
+	  background-image: url('images/37273.png');
+	  background-position: 0px -255px;
+	}
+	
+	/* color picker */
+	#hc_content .pallette_controls {
+	  margin: 0 13px;
+	  position: relative;
+	  top: 265px;
+	  left 0;
+	  width: 100%;
+	}
+	#hc_content .pallette_controls .color_txt {
+	  float: left;
+	  margin-top: 23px;
+	}
+	#hc_content .pallette_controls .rotate_btn {
+	  float: right;
+	  margin-right: 32px;
+	}
+	#hc_content .pallette {
+	  clear: both;
+	  margin: 0 13px;
+	  position: relative;
+	  top: 270px;
+	  left 0;
+	}
+	#hc_content .features {
+	  margin: 0 6px;
+	  position: absolute;
+	  bottom: 75px;
+	  left 0;
+	}
+	#hc_content .pallette-color {
+	  display: block;
+	  float: left;
+	  padding: 3px;
+	  background-color: #bbb;
+	}
+	#hc_content .pallette-color img {
+	  width: 30px;
+	}
+	#hc_content .pallette a.selected {
+	    background-color: #b55;
+	}
+	#hc_content .instructions {
+		padding-top: 40px;
+	}
+	#hc_content .options {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		margin-left: 10px;
+	}
+	#hc_content .options div {
+		float: left;
+		margin: 10px 10px 10px 0px;
+	}
+	
+	/* flexslider */
+	.flexslider {
+		background: none;
+	}
+	
+	div#slider {
+		position: absolute;
+		top: 89px;
+		left: -1000px;
+		border: 0 none;
+		box-shadow: 0 0 0; 
+		margin: 0 0 0 0;
+		background: transparent;
+		height: 180px; 
+		width: 320px;
+		overflow: hidden;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+	}
+	div .flex-direction-nav .flex-prev,
+	div .flex-direction-nav .flex-prev:hover{
+		background-image:url('images/34073.png') !important;
+		background-size: cover;
+		opacity: 1 !important;
+		display: block;
+		height: 45px;
+		width: 36px;
+		z-index: 5;
+		position: absolute;
+		left: 0px !important;
+		top: 50%;
+		display: none;
+	}
+	div .flex-direction-nav .flex-next,
+	div .flex-direction-nav .flex-next:hover{
+		background-image:url('images/34077.png') !important;
+		background-size: cover;
+		opacity: 1 !important;
+		display: block;
+		height: 45px;
+		width: 36px;
+		z-index: 5;
+		position: absolute;
+		right: 0px !important;
+		top: 50%;
+	}
+	
+	div#slider .slides img {height: 180px; width: 320px; margin: 0 auto;}
+
+	div#slider ul {margin: 0;}
+	div#slider ul.slides li {
+		position: relative; 
+		list-style: none;
+		width: 100%;
+		height: 180px;
+		}
+	
+	div#slider .slides .feature_info {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: .9;
+		display: none;
+		z-index: 10;
+	}
+	
+	div#control {
+		position: absolute;
+		top: 270px;
+		left: 0;
+		width: 290px;
+		height: 78px;
+		z-index: 10;
+		border: 0 none;
+		box-shadow: 0 0 0; 
+		margin: 0 15px;
+		overflow: hidden;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+	}
+	
+	div#control ul.slides li {position: relative; list-style: none; margin: 0px 7px;}
+	div#control .slides img { width: 43px; margin: 0 auto; opacity: 1;}
+	div#control .slides .flex-active-slide img {opacity: 1 !important;}
+	
+	div#control .touch_feat_txt {
+		padding-bottom: 10px;
+		margin-left: -15px;
+	}
+	div#control .features_txt {
+		padding-bottom: 5px;
+		margin-left: -70px;
+	}
+	li#front { background: transparent url('images/37192.jpg') no-repeat; }
+	li#profile { background: transparent url('images/37194.jpg') no-repeat; }
+	li#cockpit { background: transparent url('images/37196.jpg') no-repeat; }
+	li#storage { background: transparent url('images/37198.jpg') no-repeat; }
+	li#moonroof { background: transparent url('images/37203.jpg') no-repeat; }
+	li#front.info { background: transparent url('images/37328.jpg') no-repeat; }
+	li#profile.info { background: transparent url('images/37329.jpg') no-repeat; }
+	li#cockpit.info { background: transparent url('images/37330.jpg') no-repeat; }
+	li#storage.info { background: transparent url('images/37331.jpg') no-repeat; }
+	li#moonroof.info { background: transparent url('images/37674.jpg') no-repeat; }
+	a#hc_expand { background: transparent url('images/37229.png') no-repeat; }
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+	#hc_richmedia .hc_content { background: url('images/37601.jpg') no-repeat; background-size: cover; }
+	li#front { background: transparent url('images/37602.jpg') no-repeat; background-size: cover; }
+	/*li#profile { background: transparent url('images/37604.jpg') no-repeat; background-size: cover; }*/
+    li#profile { background: transparent url('images/37196.jpg') no-repeat; background-size: cover; }
+	/*li#cockpit { background: transparent url('images/37606.jpg') no-repeat; background-size: cover; }*/
+    li#cockpit { background: transparent url('images/37330.jpg') no-repeat; background-size: cover; }
+	li#storage { background: transparent url('images/37608.jpg') no-repeat; background-size: cover; }
+	li#moonroof { background: transparent url('images/37610.jpg') no-repeat; background-size: cover; }
+	li#front.info { background: transparent url('images/37603.jpg') no-repeat; background-size: cover; }
+	li#profile.info { background: transparent url('images/37605.jpg') no-repeat; background-size: cover; }
+	li#cockpit.info { background: transparent url('images/37607.jpg') no-repeat; background-size: cover; }
+	li#storage.info { background: transparent url('images/37609.jpg') no-repeat; background-size: cover; }
+	li#moonroof.info { background: transparent url('images/37673.jpg') no-repeat; background-size: cover; }
+	a#hc_expand { background: transparent url('images/37612.jpg') no-repeat; background-size: cover; }
+}
+
+
+
+	</style>
+	
+	<div class="hc_initial_view">		
+		<a href="#" id="hc_expand" onclick="jQuery.hc_rm.expand(event); return false;"> </a>	
+	</div> <!-- end initial view content -->
+	
+	<div class="hc_content" id="hc_content" style="display:none;">
+		<div class="hc_closebtn" id="hc_closebtn" style="display:none;" onclick="jQuery.hc_rm.collapse(event); return false;">
+			<img src="images/34061.png" />
+		</div>
+		
+		<div id="hc_rotate">
+			<div class="car-viewport car-red"></div>
+			<div class="pallette_controls" style="display:none">
+				<img class="color_txt" src="images/34062.png" alt="Escoge un color" />
+				<a class="rotate_btn" href="" onclick="rotateCar(); return false;">
+					<img src="images/34056.png" alt="Vista en 360" />
+				</a>
+			</div>
+			<div class="pallette" style="display:none">
+			    <a class="pallette-color" data-color="black" href="#"><img src="images/37226.jpg" alt="black" title="black" border="0"></a>
+			    <a class="pallette-color" data-color="white" href="#"><img src="images/37179.jpg" alt="white" title="white" border="0"></a>
+			    <a class="pallette-color" data-color="silver" href="#"><img src="images/37180.jpg" alt="silver" title="silver" border="0"></a>
+			    <a class="pallette-color selected" data-color="gun" href="#"><img src="images/37181.jpg" alt="gun" title="gun" border="0"></a>
+			    <a class="pallette-color" data-color="red" href="#"><img src="images/37182.jpg" alt="red" title="red" border="0"></a>
+			    <a class="pallette-color" data-color="blue" href="#"><img src="images/37183.jpg" alt="blue" title="blue" border="0"></a>
+			    <a class="pallette-color" data-color="jade" href="#"><img src="images/37184.jpg" alt="jade" title="jade" border="0"></a>
+			    <a class="pallette-color" data-color="sun" href="#"><img src="images/37185.jpg" alt="sun" title="sun" border="0"></a>
+			</div>
+		</div>
+		
+		<div id="start_btn">
+			<a href="" onclick="pickColor(); return false;">
+	 			<img src="images/37209.gif" alt="Crea el Tuto" />
+	 		</a>
+	 	</div>
+	 	
+	 	<img class="rotate_txt" src="images/34057.png" style="display:none;" alt="Pasa el Dedo Para la Vista en 360" />
+	 	
+	 	<div id="features" style="display: none;">
+ 			<div id="slider" class="flexslider">
+  				<ul class="slides">
+    				<li id="front" onclick="toggleFeature('front');"> </li>
+    				<li id="profile" onclick="toggleFeature('profile');"> </li>
+    				<li id="cockpit" onclick="toggleFeature('cockpit');"> </li>
+    				<li id="storage" onclick="toggleFeature('storage');"> </li>
+    				<li id="moonroof" onclick="toggleFeature('moonroof');"> </li>
+    			</ul>
+			</div>
+			<div id="control" class="flexslider">
+				<img class="touch_feat_txt" src="images/34086.png" alt="Toca la Imagen Para Obtener mas Informacion" />
+				<img class="features_txt" src="images/34064.png" alt="Caracteristicas adicionales" />
+  				<ul class="slides">
+    				<li>
+						<img src="images/37187.jpg" />
+    				</li>
+    				<li>
+						<img src="images/37188.jpg" />
+    				</li>
+    				<li>
+						<img src="images/37189.jpg" />
+    				</li>
+    				<li>
+						<img src="images/37190.jpg" />
+    				</li>
+    				<li>
+						<img src="images/37191.jpg" />
+    				</li>
+  				</ul>
+			</div>
+	 	</div>
+
+	 	
+	 	<a class="hc_click" href="http://www.nissanusa.com/crossovers/rogue" id="hc_click">
+	 		<img src="images/37207.gif" alt="Conoce mas"/>
+	 	</a>
+ 	</div><!-- end reveal content -->
+ 	
+ 		<script type="text/javascript">
+		
+		/* DO NOT USE slashes for comments. */
+		/* use .toggle to reveal from left to right, down */
+		/* use .slideToggle to reveal from top to bottom */
+		/* any closing html tags must have the forward slash escaped,e.g. <\/div> */
+	
+		(function ($) {		
+			
+			var fifheight;
+					
+			$.hc_rm = {
+				getQP: function (p) {
+					if(window.location && typeof window.location.search === "string") {
+						var qArray = window.location.search.substr(1).split("&"),qParam,i;
+						for(i=0; i<qArray.length; i++) {
+							qParam = qArray[i].split("=");
+							if(qParam.length === 2 && qParam[0] === p) {
+								return unescape(qParam[1]);
+							}
+						}
+					}
+					return false;
+				},
+				/*getSQP: function(p) {
+					var scriptSrc = $("script[src*='as.aug.me']").attr('src');
+					var tmp = scriptSrc.split("?");
+					if(tmp.length > 1) {
+						var qArray = tmp[1].split("&"),qParam,i;
+						for(i=0; i<qArray.length; i++) {
+							qParam = qArray[i].split("=");
+							if(qParam.length === 2 && qParam[0] === p) {
+								return unescape(qParam[1]);
+							}
+						}
+					}
+					return false;
+				},*/
+				expand: function (e) {				
+					if (!e) { e = window.event; }
+					e.cancelBubble = true;
+					if (e.stopPropagation) e.stopPropagation();	
+					/* FIF support */
+					if(window.inDapIF === true) {
+						$("iframe",parent.document).each(function(iel, el){
+							if(el.contentWindow === window) {
+								fifheight = $(el).css("height");
+								$(el).css("height","416px");
+								return false;
+							}
+						});
+					}				
+					/* mraid function call */
+					if(typeof mraid !== "undefined") {
+						mraid.useCustomClose(true);
+						mraid.expand();
+					}					
+					/* animations for expand */
+					$("#hc_richmedia .hc_initial_view").hide();
+					$("#hc_richmedia .hc_content").show();
+					$("#hc_richmedia .hc_closebtn").show();
+					
+					/* Hip expansion tracking */				
+					/*$("#hc_richmedia").append('<img src="#trk:expansion#?cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');	*/
+					
+					/* 3rd party expansion tracker */
+     				/*if(this.getSQP('exp') !== false) {
+     					/*$("#hc_richmedia").append('<img src="'+decodeURIComponent(this.getSQP('exp'))+'&cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');*/
+     				//}
+     								
+					return false;
+				},
+				collapse: function(e) {
+					if (!e) { e = window.event; }
+					e.cancelBubble = true;
+					if (e.stopPropagation) e.stopPropagation();	
+					/* FIF support */
+					if(window.inDapIF === true) {
+						$("iframe",parent.document).each(function(iel, el){
+							if(el.contentWindow === window) {
+								$(el).css("height",fifheight);
+								return false;
+							}
+						});
+					}				
+					/* mraid function call */
+					if(typeof mraid !== "undefined") {
+						mraid.close();
+					}					
+					/* animations for collapse */
+					$("#hc_richmedia .hc_content").hide();
+					$("#hc_richmedia .hc_closebtn").hide();
+					$("#hc_richmedia .hc_initial_view").show();
+					/*$("#hc_richmedia").append('<img src="#trk:collapse#?cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');*/						
+					return false;													
+				},
+				engage: function(e) {
+					if (!e) { e = window.event; }
+					e.cancelBubble = true;
+					if (e.stopPropagation) e.stopPropagation();
+					/*$("#hc_richmedia").append('<img src="#trk:engage#?cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');*/
+					return false;
+				}
+				
+			};
+			
+			
+					
+		}(jQuery));
+		
+		/* Add mraid lister */
+		if(typeof mraid !== "undefined") {
+			mraid.addEventListener("stateChange", handleStateChanges);
+		}
+		
+		/* Mraid Handle State Change */
+		function handleStateChanges() {
+
+			switch(mraid.getState()) {
+				case "expanded":
+					jQuery.hc_rm.expand();
+					break;
+				case "default":
+					jQuery.hc_rm.collapse();
+					break;
+			}
+			
+		}
+		
+		function rotateCar() {
+			$(".pallette").hide();
+			$(".pallette_controls").hide();
+			$(".rotate_txt").show();
+			$("#features").show();
+			$(".car-viewport").css("background-position-y", "+=250px");
+			
+			var dragging, start_x;
+
+			  $("#hc_content .car-viewport")
+			    .bind("touchstart mousedown", function (e) {
+			      e.preventDefault();
+			      
+			      dragging = true;
+
+			      if (e.originalEvent.touches) {
+			        start_x = e.originalEvent.touches[0].pageX;
+			      } else {
+			        start_x = e.originalEvent.clientX;
+			      }
+			    })
+			    .bind("touchmove mousemove", function (e) {
+			      e.preventDefault();
+			      $(".rotate_txt").hide();
+			      
+			      if (dragging) {
+			      
+			        var new_x = (e.originalEvent.touches) ? e.originalEvent.touches[0].pageX : e.originalEvent.clientX;
+			        
+			        if (new_x - start_x > 10) {
+			          /* moved right */
+			          $(".car-viewport").css("background-position-y", "+=250px");
+			          start_x = new_x;
+			        } else if (new_x - start_x < -10) {
+			          /* moved left */
+			          $(".car-viewport").css("background-position-y", "-=250px");
+			          start_x = new_x;
+			        }
+			      }		 
+			    })
+			    .bind("touchend mouseup", function () {
+			      dragging = false;
+			    });
+			  
+			  $('#slider').flexslider({
+					touch: true,
+					startAt: 0,
+					animation: "slide",
+					slideshow: false,
+		    		controlNav: false,
+		    		animationLoop: false,
+		    		directionNav: true,
+		    		sync: "#control",
+		    		start: function(slider) {
+		    			var slide = slider.find(".flex-active-slide").attr("id");
+		    			/*$("#hc_richmedia").append('<img src="#trk:'+slide+'#?cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');*/
+		    		},
+		    		before: function(slider) {
+		    	    	$(".flexslider").css('left', '0');
+		    			$(".feature_info").hide();
+		    		},
+		    		after: function(slider) {
+		    			if($(".flex-active-slide").attr('id') == "wheels") {
+		    				$(".flex-prev").hide();
+		    			} else {
+		    				$(".flex-prev").show();
+		    			}
+		    			if($(".flex-active-slide").attr('id') == "handles") {
+		    				$(".flex-next").hide();
+		    			} else {
+		    				$(".flex-next").show();
+		    			}
+		    			var slide = slider.find(".flex-active-slide").attr("id");
+		    			/*$("#hc_richmedia").append('<img src="#trk:'+slide+'#?cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');*/
+					}
+	  			});
+				
+				$('#control').flexslider({
+					startAt: 0,
+		    		animation: "slide",
+		    		slideshow: false,
+		    		controlNav: false,
+		    		animationLoop: false,
+		    		directionNav: false,
+		    		asNavFor: '#slider',
+		    		itemWidth: 43,
+		    	    itemMargin: 1,
+	  			});
+				
+				/*$("#hc_richmedia").append('<img src="#trk:three-sixty_view#?cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');*/
+		}
+		
+		function pickColor() {
+			$("#start_btn").hide();
+			$(".hc_click").show();
+			$(".pallette").show();
+			$(".pallette_controls").show();
+			$("#hc_content a.pallette-color").bind("click", function (e) {
+			    e.preventDefault();
+			  
+			    var old_selected = $(".pallette a.selected");
+			    
+			    /* remove the old selected car */
+			    if (old_selected.length){
+			      $("#hc_content .car-viewport").removeClass("car-" + old_selected.data("color"));
+			      old_selected.removeClass("selected");
+			    }
+				
+			    /* add the new selected car */
+			    $(this).addClass("selected");
+			    $("#hc_content .car-viewport").addClass("car-" + $(this).data("color"));
+			   /* $("#hc_richmedia").append('<img src="#trk:color_'+$(this).data("color")+'#?cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');*/
+			  });
+			
+			$("#hc_content a.pallette-color:first").trigger("click");
+			/*$("#hc_richmedia").append('<img src="#trk:color_options#?cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');*/
+		}
+		
+		function toggleFeature(feature) {
+			$("#"+feature).toggleClass('info');
+			if (!$("#"+feature).hasClass('info')) {
+				$(".flex-direction-nav").show();
+				/*$("#hc_richmedia").append('<img src="#trk:feature_'+feature+'#?cb='+new Date().getTime()+'" style="position:absolute;height:1px;width:1px;" />');*/
+			} else {
+				$(".flex-direction-nav").hide();
+			}
+		}
+		
+		$(document).ready(function() {
+			/*$(".hc_ci").bind("click",function(e){
+				e.preventDefault();
+				e.stopPropagation();
+	
+				var label = "click_"+$(".flex-active-slide").attr('id');
+				var url = $(this).attr("href");
+				
+				var i = new Image();
+	
+				i.onload = function(){
+					window.location = url;
+				};
+
+				i.src = '#trk:'+label+'#?cb='+new Date().getTime();
+			});*/
+			
+			/*var i = new Image();
+			i.src = 'http://ad.doubleclick.net/ad/N3340.285074.HIPCRICKET/B7980069.4;sz=1x1;pc=[TPAS_ID];ord='+new Date().getTime()+'?';*/
+		});
+	
+	</script>
+	
+</div><!-- end required wrapper -->
